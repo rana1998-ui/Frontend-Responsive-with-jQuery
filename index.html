@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InSource IT</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/resp.css">
+
+    <script src="https://kit.fontawesome.com/b78451dd0e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick-1.8.1/slick/slick-theme.css" />
+
+
+    <link type="text/css" rel="stylesheet"
+        href="./darksmo-jquery-localization-tool-v0.0.24-0-g66a0b0c/darksmo-jquery-localization-tool-66a0b0c/dist/jquery.localizationTool.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body onload="">
+
+    <div class=" modal fade shadow-lg" id="myModal">
+
+        <div class=" modal-dialog modal-dialog-centered">
+
+            <div class=" modal-content subsubtitle">
+
+                <div class=" modal-header">
+                    <h3 class=" text-center">Create an account</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+
+                <div class=" modal-body">
+
+                    <div class=" form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" name="" id="name" class=" form-control" required>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="" id="email" class=" form-control" required>
+                        <div class="error2"></div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label for="pass">Password:</label>
+                        <input type="password" name="" id="pass" class=" form-control" required>
+                        <div class="error4"></div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label for="pass2">Confirm Password:</label>
+                        <input type="password" name="" id="pass2" class=" form-control" required>
+                        <div class="error3"></div>
+                    </div>
+
+                    <button class="btn btn-outline-primary mt-2 m-auto d-block" aria-hidden="true" id="confirm"
+                        data-dismiss="modal">Sign-up</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class=" modal fade shadow" id="myModal2">
+
+        <div class=" modal-dialog modal-dialog-centered">
+
+            <div class=" modal-content subsubtitle">
+
+                <div class=" modal-header">
+                    <h3 class=" text-center">Sign-in</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+
+                <div class=" modal-body">
+
+                    <div class=" form-group">
+                        <label for="name">Email:</label>
+                        <input type="email" name="" id="name_1" class=" form-control" required>
+                        <div class="error5"></div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label for="pass">Password:</label>
+                        <input type="password" name="" id="pass_1" class=" form-control" required>
+                        <div class="error6"></div>
+                    </div>
+
+                    <button class="btn btn-outline-primary mt-2 m-auto d-block" aria-hidden="true" id="cnfrm"
+                        data-dismiss="modal">Sign-in</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="preload">
+
+    </div>
+
+    <header style="width: 100%;" id="hd-bg">
+
+        <nav class="navbar navbar-expand-lg nav-bg" id="nav-bg">
+
+            <div class="container-fluid">
+
+                <div class="logo ml-2 justify-content-center align-content-center align-items-center">
+                    <a href="#" class="navbar-brand subsubtitle " id="logo-name">InSource IT</a>
+                </div>
+
+                <button
+                    class=" navbar-toggler collapsed border-0 justify-content-center align-content-center align-items-center  mr-2 "
+                    data-toggle="collapse" data-target="#anyid55">
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="anyid55">
+
+                    <ul
+
+                        class="navbar-nav w-100 text-center justify-content-center align-content-center align-items-center">
+                        <li class="nav-item "><a href="#" class="link nav-link  mr-2 hov subsubtitle">Home</a>
+                        </li>
+                        <li class="nav-item "><a href="#" class="link nav-link  mr-2 hov subsubtitle">Contact Us</a>
+                        </li>
+                        <li class="nav-item "><a href="#" class="link nav-link mr-2 hov subsubtitle">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown"> <a href="" class="link nav-link hov dropdown-toggle subsubtitle"
+                                data-toggle="dropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"> Services</a>
+
+                            <ul class="dropdown-menu text-center drop-bg" aria-labelledby="navbarDropdowns" id="dr-bg">
+
+                                <li><a href="" class="dropdown-item subsubtitle">Team Augmentation</a></li>
+                                <li><a href="" class="dropdown-item subsubtitle">Fixed Price Projects</a></li>
+                                <li><a href="" class="dropdown-item subsubtitle">Discovery Workshop</a></li>
+                                <li><a href="" class="dropdown-item subsubtitle">Product Consulting</a></li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                    <form class="justify-content-center align-content-center align-items-center">
+
+                        <div class="form-check-inline mr-3 mt-2">
+
+                            <input type="text" id="searchquery" class="form-control mr-2 bg-transparent text-white p-3">
+
+                            <input type="submit" id="searchbtn" class="btn btn-outline-primary" value="Search"
+                                style="width: 110px; height: 38px;">
+
+                        </div>
+
+                        <div id="err-rslt"></div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </nav>>
+
+        <div class="container1">
+
+            <div class="sun sun-logo">
+                <i class="fas fa-sun fas"></i>
+            </div>
+
+            <div class="moon moon-logo">
+                <i class="fas fa-moon fas-1"></i>
+            </div>
+
+        </div>
+
+        <div class="content-1 container-fluid mt-5 wi-1 p-5">
+            <p id="content-2" class=" text-white fSize w-50 ml-5 mt-5"><strong class="glow">Ultimate</strong> Partner
+                For
+                Future Proof<strong class="glow"> Digital
+                    Transformation</strong></p>
+            <p id="content-3" class=" ml-5">Solving technology problems for startups, enterprises and corporates</p>
+            <button type="button" class=" btn btn-primary rounded-pill p-2 mt-2 ml-5" style="width: 130px;"
+                id="mod">Let's Go</button>
+            <button type="button" class="btn btn-primary  mt-2 ml-2 text-white p-2 rounded-pill" style="width: 150px;"
+                data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">Sign-up</button>
+
+            <button type="button" class="btn btn-primary mt-2 ml-2 text-white p-2 rounded-pill" style="width: 150px;"
+                data-toggle="modal" data-target="#myModal2" data-backdrop="static"
+                data-keyboard="false">Sign-in</button>
+        </div>
+
+        <div class="partner container">
+            <h2 class="hr">Our Partners</h2>
+        </div>
+
+        <div class="slider container">
+            <img src="./Pictures/4Stay.png" alt="" id="pic-1">
+            <img src="./Pictures/LightPoint.png" alt="" id="pic-2">
+            <img src="./Pictures/MentorCity.png" alt="" id="pic-3">
+            <img src="./Pictures/Pepsi.png" alt="" id="pic-4">
+            <img src="./Pictures/PostalMethods.png" alt="" id="pic-5">
+            <img src="./Pictures/Subway.png" alt="" id="pic-6">
+        </div>
+
+    </header>
+
+    <div class=" mar-top row container-fluid m-auto" id="bg-chan9">
+
+        <div id="newsResults"></div>
+
+    </div>
+
+    <div id="bg-light">
+
+        <section class=" container-fluid row m-auto p-5 mt-5 text-center justify-content-center vec-1 i" id="smooth">
+            <div class=" wi col-lg-3 text-center justify-content-center m-auto p-3 bg ">
+                <h1 class="mb-4">About Us</h1>
+                <p class="  text-center m-auto align-1">We are a technology company that has been developing quality
+                    software solutions for more
+                    than 10 years. Our clients include top executives, business leaders and entrepreneurs from North
+                    America, Middle East and Europe. We solve all technology related problems and provide insightful
+                    solutions with detailed analysis to help you in producing better results.</p>
+            </div>
+        </section>
+
+        <div class="section-1 container-fluid bg-primary p-5 vec-2" id="smooth2">
+
+            <h1 class=" text-center text-white">Expertise</h1>
+
+            <div class=" clr-11 row justify-content-center mt-5">
+
+                <div class=" info col-lg-3 p-3 text-center m-2 bg-light radi" id="bg-chan1">
+                    <img src="./Pictures/CUSTOM-SOFTWARE-DEVELOPMENT.png" alt="" class="">
+                    <h3 class="mt-4">SOFTWARE DEVELOPMENT</h3>
+                    <p class="details mt-4 align-1">We develop custom software based on our clients needs. Whether you
+                        have
+                        a start up, a
+                        small
+                        business or an enterprise, our skilled professionals would integrate seamlessly with your
+                        business.
+                    </p>
+                </div>
+
+                <div class="info col-lg-3 p-3 text-center m-2 bg-light radi" id="bg-chan2">
+                    <img src="./Pictures/DATA-SCIENCE.png" alt="">
+                    <h3 class="mt-4">DATA SCIENCE</h3>
+                    <p class="details mt-4 align-1">We produce elaborate data insights and automated reporting to help
+                        your
+                        company in
+                        making
+                        informed decisions through data mining, big data processing, machine learning, AI development
+                        and
+                        data.</p>
+                </div>
+
+                <div class="info col-lg-3 p-3 text-center m-2 bg-light radi" id="bg-chan3">
+                    <img src="./Pictures/DISCOVERY-WORKSHOP.png" alt="">
+                    <h3 class='mt-4'>DISCOVERY WORKSHOP</h3>
+                    <p class="details mt-4 align-1">Our discovery workshop will help you understand your short and long
+                        term
+                        goals,
+                        KPI’s,
+                        financials and any technological challenges that may come along with a clickable prototype
+                        integrate
+                        seamlessly with your business.</p>
+                </div>
+
+                <div class="info1 col-lg-3 p-3 text-center m-2 bg-light radi" id="bg-chan4">
+                    <img src="./Pictures/SUPPORT-AND-MAINTENANCE.png" alt="">
+                    <h3 class="mt-4">SUPPORT AND MAINTENANCE</h3>
+                    <p class="details mt-4 align-1">We have the best support team that helps you upgrade your current
+                        software with software
+                        enhancement, software maintenance and 24/7 monitoring of your core applications.</p>
+                </div>
+
+                <div class="info1 col-lg-3 p-3 text-center m-2 bg-light radi" id="bg-chan5">
+                    <img src="./Pictures/PRODUCT-CONSULTING.png" alt="">
+                    <h3 class="mt-4">PRODUCT CONSULTING</h3>
+                    <p class="details mt-4 align-1">Our accomplished product consultants work with your team to
+                        understand
+                        the requirements
+                        and
+                        help you in planning, strategising and developing quality products.</p>
+                </div>
+
+
+                <div class="info1 col-lg-3 p-3 text-center m-2 bg-light radi" id="bg-chan6">
+                    <img src="./Pictures/UiUx.png" alt="">
+                    <h3 class="mt-4">UI/UX DESIGN</h3>
+                    <p class="details mt-4 align-1">We make sure the end-user of your product gets the best experience.
+                        We
+                        run extensive
+                        buyer
+                        analysis and usability testing with our experienced product designers and developers.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class=" container-fluid  text-white p-5 ch-bg">
+
+            <form method="get" class="form-1 ml-5 w-75" id="form">
+
+                <fieldset>
+
+                    <legend class=" font-weight-bold mb-5">Get in touch with us:</legend>
+
+                    <div class=" form-group">
+
+                        <label for="fname">Name:</label>
+                        <input type="text" id="fname" class=" form-control">
+
+                    </div>
+
+                    <div class=" form-group">
+
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" class=" form-control">
+
+                    </div>
+
+                    <div class=" form-group">
+
+                        <label for="phone">Phone:</label>
+                        <input type="number" id="phone" class=" form-control">
+                        <div class="error"></div>
+
+                    </div>
+
+                    <div class=" form-group">
+
+                        <label for="msg">Your Message:</label>
+                        <textarea id="msg" cols="40" rows="10" class=" form-control form-text"></textarea>
+
+                    </div>
+
+                    <button type="submit" id="cnfrm-2"
+                        class="btn-1 btn btn-primary rounded-pill p-2 shadow mt-3">Send</button>
+
+                </fieldset>
+
+            </form>
+
+
+            <div class=" text-left mt-5 p-2 w-100 ml-4">
+
+                <div class=" text-left p-2 mb-3">
+
+                    <p><a href="" class="loc"><i class="fa fa-phone"></i></a><a href="#"></a><a
+                            href="https://wa.me/923346055878" class="clr" title="Whatsapp Redirect">+1
+                            (844)
+                            539 3562</a></p>
+                    <p><a href="#" class="loc"><i class="fa fa-envelope"></i></a><a href="#"
+                            class="clr">info@insource.com</a>
+                    </p>
+                    <p><a href="#" class="loc"><i class="fa-solid fa-location-dot"></i></a><a href="#" class="clr">651
+                            Gambocz Ct, Monmouth Jct, NJ, 70558</a></p>
+
+                </div>
+
+                <a href="#" class="social"><i class=" icon fa fa-instagram m-2"></i></a>
+                <a href="#" class="social"><i class=" icon fa fa-linkedin m-2"></i></a>
+                <a href="#" class="social"><i class=" icon fa fa-twitter m-2"></i></a>
+
+            </div>
+
+
+        </div>
+
+        <a href="#" class="scrollToTop shadow" style="display: inline;" id="bg-chan8"><i
+                class="icon-2 fa fa-arrow-up"></i></a>
+
+        <footer class=" container-fluid p-3 justify-content-center " id="bg-chan7">
+
+            <div class="text-center">
+
+                <a>&copy2022 All rights reserved.</a>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="/index.js"></script>
+    <script
+        src="./darksmo-jquery-localization-tool-v0.0.24-0-g66a0b0c/darksmo-jquery-localization-tool-66a0b0c/src/jquery.localizationTool.js"></script>
+
+    <script>
+
+        $('.slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 400,
+            slidesToShow: 4,
+            arrows: false,
+            autoplay: true,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false,
+                        autoplay: true,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 445,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+
+        var preloader = document.getElementById('preload')
+
+        setTimeout(function preloading() {
+
+            preloader.style.display = 'none'
+
+        }, 500);
+
+        document.querySelector(".container1").addEventListener("click", function () {
+
+            document.querySelector(".sun-logo").classList.toggle("animate-sun");
+            document.querySelector(".moon-logo").classList.toggle("animate-moon");
+            document.querySelector(".vec-1").classList.toggle("bg-dark");
+            document.querySelector(".vec-2").classList.toggle("bg-dark");
+            document.querySelector(".ch-bg").classList.toggle("bg-dark");
+            document.getElementById('bg-chan1').classList.toggle("bg-dark");
+            document.getElementById('bg-chan2').classList.toggle("bg-dark");
+            document.getElementById('bg-chan3').classList.toggle("bg-dark");
+            document.getElementById('bg-chan4').classList.toggle("bg-dark");
+            document.getElementById('bg-chan5').classList.toggle("bg-dark");
+            document.getElementById('bg-chan6').classList.toggle("bg-dark");
+            document.getElementById('bg-chan7').classList.toggle("bg-dark");
+            document.getElementById('bg-chan8').classList.toggle("bg-dark");
+            document.getElementById('nav-bg').classList.toggle("bg-dark");
+            document.getElementById('hd-bg').classList.toggle("bg-dark");
+            document.getElementById('dr-bg').classList.toggle("bg-dark");
+            document.getElementById('bg-chan9').classList.toggle("bg-dark");
+
+        });
+
+        if (window.location.href.match(/localhost.*[/]demo/)) {
+            $("html").append('<div><a href="supportedLanguages.html">Preview Supported Languages</a></div>');
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+@media screen and (max-width: 758px) {
+
+
+    .align-1 {
+        text-align: center !important;
+    }
+
+    .hr {
+        font-size: 1.4rem !important;
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    #content-2 {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media screen and (max-width: 696px) {
+
+    #content-2 {
+        font-size: 2.2rem !important;
+    }
+
+    #content-3 {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 623px) {
+
+    #content-2 {
+        font-size: 2rem !important;
+    }
+
+    #content-3 {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    #content-2 {
+        font-size: 1.8rem !important;
+    }
+
+    #content-3 {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 397px) {
+
+    .btn-1{
+        width: 100px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .clr{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    #content-2 {
+        width: auto !important;
+        margin-left: 0 !important;
+    }
+
+    #content-3 {
+        width: auto !important;
+        margin-left: 0 !important;
+    }
+
+    #mod {
+        width: 110px !important;
+        padding: 8px !important;
+        font-size: 0.8rem !important;
+        margin-left: 0 !important;
+    }
+
+    #logo-name {
+        font-size: 1.5rem;
+    }
+
+    .scrollToTop {
+        width: 68px;
+        height: 60px;
+        right: 15px;
+    }
+
+    .scrollToTop .fa {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 599px) {
+
+    .slider {
+        padding: 2rem !important;
+        margin-top: 2rem;
+    }
+
+    .hr {
+        font-size: 1.2rem !important;
+    }
+
+}
+
+@media screen and (max-width: 1392px) {
+
+    .error3 {
+        width: 20vw;
+    }
+
+    .error4 {
+        width: 20vw;
+    }
+
+    .error2 {
+        width: 20vw;
+    }
+
+    .error {
+        width: 20vw;
+    }
+
+}
+
+@media screen and (max-width: 835px) {
+
+    .error3 {
+        width: 50vw;
+    }
+
+    .error4 {
+        width: 50vw;
+    }
+
+    .error2 {
+        width: 50vw;
+    }
+
+    .error {
+        width: 50vw;
+    }
+
+}
+
+@media screen and (max-width: 334px) {
+
+    .error3 {
+        width: 100vw;
+    }
+
+    .error4 {
+        width: 100vw;
+    }
+
+    .error2 {
+        width: 100vw;
+    }
+
+    .error {
+        width: 100vw;
+    }
+
+}
